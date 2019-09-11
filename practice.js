@@ -297,7 +297,15 @@ function longer (arr1, arr2){
 */
 
 function both (arr1, arr2){
-  
+  let both = []
+  for(i=0; i < arr1.length; i++){
+    for(j=0; j < arr2.length; j++){
+      if(arr1[i] === arr2[j]){
+        both.push(arr1[i])
+      }
+    }
+  }
+  return both
 }
 
 
@@ -338,7 +346,7 @@ var colt = {
   After that console.log the length of the Array and make sure that it's equal to 4. 
 */
 
-//Code Here
+devMountainEmployees = [joe, cahlan, ryan, colt]
 
 
 
@@ -347,7 +355,13 @@ var colt = {
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-//Code Here
+for(i=0; i < devMountainEmployees.length; i++){
+  if(devMountainEmployees[i].name === 'Cahlan')
+  {
+    devMountainEmployees.splice(i,1)
+  }
+
+}
 
 
 
@@ -359,7 +373,7 @@ var colt = {
   Create an empty array called users.
 */
 
-//Code Here
+let users = []
 
 
 
@@ -378,7 +392,24 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
+users.push(user1)
+users.push(
+  {
+    name: "Cole",
+    email: "cole@cole.cole",
+    password: "cole",
+    username: "cole1"
+  }
+)
+users.push(
+  {
+    name: "Elizabeth",
+    email: "elizabeth@gmail.com",
+    password: "nope",
+    username: "lizdfin"
+  }
+
+)
 
 
 
@@ -392,7 +423,11 @@ var user1 = {
   Once you find the array index he's located in, delete him from the array.
 */
 
-//Code Here
+for(i=0;i<users.length;i++){
+  if(users[i].email === "mark.mciver@devmounta.in"){
+    users.splice(i,1)
+  }
+}
 
 
 
